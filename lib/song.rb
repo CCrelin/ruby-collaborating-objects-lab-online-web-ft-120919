@@ -16,6 +16,7 @@ class Song
   end
   
   def artist_name=(name)
+    binding.pry
     if (self.artist.nil?)
       self.artist = Artist.new(name)
     else
